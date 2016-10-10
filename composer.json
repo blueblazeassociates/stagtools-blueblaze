@@ -1,0 +1,29 @@
+{
+  "name"        : "blueblazeassociates/stagtools-blueblaze",
+  "description" : "StagTools Extensions by Blue Blaze.  Extends and modifies the StagTools plugin.",
+  "type"        : "wordpress-muplugin",
+  "homepage"    : "https://github.com/blueblazeassociates/stagtools-blueblaze",
+  "license"     : "GPL-2.0+",
+  "authors" : [{
+      "name"     : "Blue Blaze Associates",
+      "homepage" : "http://www.blueblazeassociates.com",
+      "role"     : "Owner",
+      "email"    : "admin@blueblazeassociates.com"
+    }, {
+      "name"     : "Ed Gifford",
+      "homepage" : "http://www.blueblazeassociates.com",
+      "role"     : "Developer",
+      "email"    : "egifford@blueblazeassociates.com"
+    }
+  ],
+  "keywords" : [
+  ],
+  "replace" : {
+  },
+  "require" : {
+    "php" : ">=5.6.24" 
+  },
+  "config" : {
+    "php" : "5.6.*"
+  }
+}
