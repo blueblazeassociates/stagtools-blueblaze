@@ -11,7 +11,7 @@
  * Plugin Name:       StagTools Extensions by Blue Blaze
  * Depends:           StagTools
  * Description:       Extends and modifies the StagTools plugin.
- * Version:           1.2.6
+ * Version:           2.1.2
  * Author:            Blue Blaze Associates
  * Author URI:        http://www.blueblazeassociates.com
  * License:           GPL v2 or later
@@ -82,23 +82,6 @@ function stagtools_blueblaze__alter_taxonomy_skills() {
   }
 }
 add_action( 'init', 'stagtools_blueblaze__alter_taxonomy_skills' );
-
-/**
- * Redefine the stag_two_third_last shortcode from StagTools.
- *
- * This is to fix a bug:
- * Add clear element to [stag_two_third_last].
- *
- * See https://github.com/mauryaratan/stagtools/issues/20
- *
- * @param unknown $atts
- * @param string $content
- * @return string
- */
-function stagtools_blueblaze__stag_two_third_last( $atts, $content = null ) {
-  return '<div class="stag-column stag-two-third stag-column-last">' . do_shortcode( $content ) . '</div><div class="clear"></div>';
-}
-add_shortcode( 'stag_two_third_last', 'stagtools_blueblaze__stag_two_third_last' );
 
 /**
  * Widget styles.
